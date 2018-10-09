@@ -1,0 +1,73 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  I'm a prototype!
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Hello!
+      <h2 class="govuk-heading-l">I am a prototype</h2>
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            I have hidden a thing
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <p class="no">Not this way</p>
+          <a href="next.html" class="govuk-link">This way</a>
+        </div>
+      </details>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="opinion-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              Do you like prototypes?
+            </h1>
+          </legend>
+          <span id="opinion-hint" class="govuk-hint">
+            Select all that apply.
+          </span>
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="opinion-1" name="opinion" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="opinion-1">
+                Sure
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="opinion-2" name="opinion" type="checkbox" value="mines">
+              <label class="govuk-label govuk-checkboxes__label" for="opinion-2">
+                Kinda
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="opinion-3" name="opinion" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="opinion-3">
+                No way
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <h2 class="govuk-heading-m">Examples and documentation</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
+        <li>
+          <a href="https://design-system.service.gov.uk">
+            GOV.UK Design System
+          </a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+{% endblock %}
